@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <style>
+        *{
+          padding: 0;
+          margin: 0;
+          color: wheat;
+        }
+        form{
+            background: linear-gradient(to right, #1b3374, #8f4fe8);
+            color: wheat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+            height: 500px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* form::before{
+            content: "";
+            position: absolute;
+            width: 58%;
+            height: 70%;
+  background: linear-gradient(180deg, #35BA62 0%, rgba(169, 50, 50, 0.79) 100%);
+filter: blur(134px);
+  background-size: 100% 100%;
+  background-repeat: no-repeat; 
+        } */
+        form input{
+            margin-top: 30px;
+            height: 30px;
+            width: 80%;
+            border-radius: 10px;
+            border: none;
+            color: crimson;
+            text-align: center;
+        }
+        a{
+            margin-top: 30px;
+        }
+
+        .ip{
+            border-radius: 10px;
+            background: crimson;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Login page</h1>
+    <form action="/registration/profile"  method="POST">
+        <input type="text" name="email" id="email" placeholder="Enter your email"/>
+        <input type="text" name="pwd" id="pwd" placeholder="Enter your password"/>
+        <input class="ip" type="submit" value="login">
+        <a href="./register.html">Don't have an account? Register.</a>
+    </form>
+    </center>
+</body>
+</html>
